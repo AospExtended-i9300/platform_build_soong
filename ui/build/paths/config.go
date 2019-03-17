@@ -40,7 +40,7 @@ var Allowed = PathConfig{
 var Forbidden = PathConfig{
 	Symlink: false,
 	Log:     true,
-	Error:   true,
+	Error:   false,
 }
 
 var Log = PathConfig{
@@ -77,6 +77,7 @@ var Configuration = map[string]PathConfig{
 	"bash":     Allowed,
 	"bc":       Allowed,
 	"bzip2":    Allowed,
+	"ccache":   Allowed,
 	"date":     Allowed,
 	"dd":       Allowed,
 	"diff":     Allowed,
@@ -88,11 +89,13 @@ var Configuration = map[string]PathConfig{
 	"grep":     Allowed,
 	"gzip":     Allowed,
 	"hexdump":  Allowed,
+	"lzma":     Allowed,
 	"jar":      Allowed,
 	"java":     Allowed,
 	"javap":    Allowed,
 	"lsof":     Allowed,
 	"m4":       Allowed,
+	"make":     Allowed,
 	"openssl":  Allowed,
 	"patch":    Allowed,
 	"pstree":   Allowed,
@@ -107,6 +110,8 @@ var Configuration = map[string]PathConfig{
 	"xz":       Allowed,
 	"zip":      Allowed,
 	"zipinfo":  Allowed,
+
+	"arm-linux-androidkernel-gcc": Allowed,
 
 	// Host toolchain is removed. In-tree toolchain should be used instead.
 	// GCC also can't find cc1 with this implementation.
