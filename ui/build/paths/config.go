@@ -100,6 +100,7 @@ var Configuration = map[string]PathConfig{
 	"patch":    Allowed,
 	"pstree":   Allowed,
 	"python3":  Allowed,
+	"repo":     Allowed,
 	"realpath": Allowed,
 	"rsync":    Allowed,
 	"seq":      Allowed,
