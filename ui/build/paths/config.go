@@ -102,6 +102,7 @@ var Configuration = map[string]PathConfig{
 	"python3":  Allowed,
 	"realpath": Allowed,
 	"rsync":    Allowed,
+	"seq":      Allowed,
 	"sh":       Allowed,
 	"tar":      Allowed,
 	"timeout":  Allowed,
